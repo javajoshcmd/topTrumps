@@ -242,6 +242,8 @@ const deck = [
   }),
 ];
 
+// declaring arrays for the player and opponent hand
+
 let player1 = [];
 
 let player2 = [];
