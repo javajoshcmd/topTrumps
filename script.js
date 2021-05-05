@@ -1,3 +1,5 @@
+// object array containing all cards
+
 const deck = [
   (hendrix = {
     name: "Jimmi Hendrix",
@@ -244,6 +246,8 @@ let player1 = [];
 
 let player2 = [];
 
+// Functions to randomly shuffle and deal the deck of cards.
+
 const deal1 = (deck) => {
   for (let i = 0; i < 15; i++) {
     let tempCard = deck[i];
@@ -267,6 +271,8 @@ const deal2 = (deck) => {
 deal1(deck);
 deal2(deck);
 
+// variables and objects for scoring and player hands.
+
 let player1Hand = player1.pop();
 let player2Hand = player2.pop();
 let score = {
@@ -277,6 +283,8 @@ let score = {
 let deadCards = {
   stack: 0,
 };
+
+// Main game logic function
 
 const Game = (player1Hand, player2Hand, score) => {
   if (score.user >= 1) {
@@ -358,6 +366,8 @@ const Game = (player1Hand, player2Hand, score) => {
     console.log("You have lost the Game");
   }
 };
+
+// function to make the game repeat until a winner is declared.
 
 const nextRound = (player1Hand, player2Hand, score) => {
   let player1Hand1 = player1.pop();
