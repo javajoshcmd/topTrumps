@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(172, 172, 172);
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-left: 45%;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7.5%;
+}
+
+.subHead {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6%;
+}
