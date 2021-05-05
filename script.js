@@ -287,66 +287,66 @@ const Game = (player1Hand, player2Hand, score) => {
       if (player1Hand.good > player2Hand.good) {
         score.user++;
         score.cpu--;
-        console.log("you have won this round", score.user);
+        console.log("you have won this round score:", score.user);
       } else if (player1Hand.good == player2Hand.good) {
         deadCards.stack++;
         console.log("its a draw");
       } else {
         score.user--;
         score.cpu++;
-        console.log("you have lost this round", score.user);
+        console.log("you have lost this round score:", score.user);
       }
     } else if ((choice = "bad")) {
       if (player1Hand.bad > player2Hand.bad) {
-        console.log("you have won this round", score.user);
+        console.log("you have won this round score:", score.user);
         score.user++;
         score.cpu--;
       } else if (player1Hand.bad == player2Hand.bad) {
         deadCards.stack++;
         console.log("its a draw");
       } else if (player1Hand.bad < player2Hand.bad) {
-        console.log("you have lost this round", score.user);
+        console.log("you have lost this round score:", score.user);
         score.user--;
         score.cpu++;
       }
     } else if ((choice = "cool")) {
       if (player1Hand.cool > player2Hand.cool) {
-        console.log("you have won this round", score.user);
+        console.log("you have won this round score:", score.user);
         score.user++;
         score.cpu--;
       } else if (player1Hand.cool == player2Hand.cool) {
         deadCards.stack++;
         console.log("its a draw", score.user);
       } else if (player1Hand.cool < player2Hand.cool) {
-        console.log("you have lost this round", score.user);
+        console.log("you have lost this round score:", score.user);
         score.user--;
         score.cpu++;
 
         player1Hand = player1.pop();
       } else if ((choice = "cringe")) {
         if (player1Hand.cringe > player2Hand.cringe) {
-          console.log("you have won this round", score.user);
+          console.log("you have won this round score:", score.user);
           score.user++;
           score.cpu--;
         } else if (player1Hand.cringe == player2Hand.cringe) {
           deadCards.stack++;
           console.log("its a draw", score.user);
         } else if (player1Hand.cringe < player2Hand.cringe) {
-          console.log("you have lost this round", score.user);
+          console.log("you have lost this round score:", score.user);
           score.user--;
           score.cpu++;
         }
         player1Hand = player1.pop();
       } else if ((choice = "alive")) {
         if (player1Hand.alive > player2Hand.alive) {
-          console.log("you have won this round", score.user);
+          console.log("you have won this round score:", score.user);
           score.user++;
           score.cpu--;
         } else if (player1Hand.alive == player2Hand.alive) {
           deadCards.stack++;
           console.log("its a draw", score.user);
         } else if (player1Hand.alive < player2Hand.alive) {
-          console.log("you have lost this round", score.user);
+          console.log("you have lost this round score:", score.user);
           score.user--;
           score.cpu++;
         }
